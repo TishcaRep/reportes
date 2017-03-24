@@ -1,8 +1,9 @@
-﻿Public Class Form2
+﻿
+Public Class Form2
     Private Sub PacientesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PacientesToolStripMenuItem.Click
         Form3.Show()
     End Sub
-    Private Sub FamiliaresToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FamiliaresToolStripMenuItem.Click
+    Private Sub VisitaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VisitaToolStripMenuItem.Click
         Form4.Show()
     End Sub
     Private Sub AyudaToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AyudaToolStripMenuItem.Click
@@ -17,4 +18,5 @@
             e.Cancel = True
         End If
     End Sub
+
 End Class

@@ -22,8 +22,124 @@ Partial Class Form4
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(15, 77)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(214, 21)
+        Me.ComboBox1.TabIndex = 0
+        '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.Location = New System.Drawing.Point(255, 77)
+        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {10, 0, 0, 0})
+        Me.NumericUpDown1.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(49, 20)
+        Me.NumericUpDown1.TabIndex = 1
+        Me.NumericUpDown1.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(350, 76)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(149, 20)
+        Me.TextBox1.TabIndex = 2
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(533, 76)
+        Me.TextBox2.Multiline = True
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(162, 121)
+        Me.TextBox2.TabIndex = 3
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 50)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(52, 13)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Paciente:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(245, 37)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(59, 26)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Numero de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "visitantes:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(347, 50)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(120, 13)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "Relacion con visitantes:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(530, 50)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(65, 13)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "Actividades:"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(15, 131)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(213, 66)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "Guardar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Form4
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Text = "Form4"
+        Me.ClientSize = New System.Drawing.Size(725, 215)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.NumericUpDown1)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Name = "Form4"
+        Me.Text = "Visita"
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents NumericUpDown1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

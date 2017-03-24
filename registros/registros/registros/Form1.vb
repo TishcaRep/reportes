@@ -20,7 +20,7 @@ Public Class Form1
         Dim sSql As String
         Dim sw As Boolean = False
         Try
-            oConexion.ConnectionString = "Server=localhost;database=regist;user id=root;password=htmlcss;"
+            oConexion.ConnectionString = "Server=192.168.15.208;database=regist;user id=tishca;password=jshtmlcss;"
             sSql = "SELECT * FROM regist_enfermera WHERE regist_enfermera_usuario = '" & TextBox1.Text & "' AND regist_enfermera_password = '" & MaskedTextBox1.Text & "'"
             oConexion.Open()
             oAdaptador = New MySqlDataAdapter(sSql, oConexion)

@@ -24,17 +24,17 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.PacientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VisitaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReporteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.FamiliaresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PacientesToolStripMenuItem, Me.FamiliaresToolStripMenuItem, Me.ReporteToolStripMenuItem, Me.AyudaToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PacientesToolStripMenuItem, Me.VisitaToolStripMenuItem, Me.AyudaToolStripMenuItem, Me.ReporteToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(858, 24)
@@ -47,6 +47,18 @@ Partial Class Form2
         Me.PacientesToolStripMenuItem.Size = New System.Drawing.Size(69, 20)
         Me.PacientesToolStripMenuItem.Text = "Pacientes"
         '
+        'VisitaToolStripMenuItem
+        '
+        Me.VisitaToolStripMenuItem.Name = "VisitaToolStripMenuItem"
+        Me.VisitaToolStripMenuItem.Size = New System.Drawing.Size(47, 20)
+        Me.VisitaToolStripMenuItem.Text = "Visita"
+        '
+        'AyudaToolStripMenuItem
+        '
+        Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
+        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.AyudaToolStripMenuItem.Text = "Ayuda"
+        '
         'ReporteToolStripMenuItem
         '
         Me.ReporteToolStripMenuItem.Name = "ReporteToolStripMenuItem"
@@ -56,25 +68,13 @@ Partial Class Form2
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = Global.registros.My.Resources.Resources.Wallpapers_1920_x_1080_1179
+        Me.PictureBox1.Image = Global.registros.My.Resources.Resources.fo_1_nota_migracion20
         Me.PictureBox1.Location = New System.Drawing.Point(0, 24)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(858, 465)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
-        '
-        'FamiliaresToolStripMenuItem
-        '
-        Me.FamiliaresToolStripMenuItem.Name = "FamiliaresToolStripMenuItem"
-        Me.FamiliaresToolStripMenuItem.Size = New System.Drawing.Size(72, 20)
-        Me.FamiliaresToolStripMenuItem.Text = "Familiares"
-        '
-        'AyudaToolStripMenuItem
-        '
-        Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
-        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
-        Me.AyudaToolStripMenuItem.Text = "Ayuda"
         '
         'Form2
         '
@@ -98,6 +98,6 @@ Partial Class Form2
     Friend WithEvents PacientesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReporteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents FamiliaresToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AyudaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents VisitaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
